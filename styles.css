@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: #202020;
+    color: white;
+}
+
+.app {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #2b2b2b;
+    border-radius: 16px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#taskCounter,
+#emptyMessage {
+    text-align: center;
+    color: #cfcfcf;
+}
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin: 24px 0;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dcdcdc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    margin-top: 12px;
+    background-color: #111;
+    border-radius: 8px;
+}
+
+li span {
+    flex: 1;
+}
+
+li input[type="checkbox"] {
+    width: auto;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.delete-button {
+    background-color: #ff5c5c;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #ff3b3b;
+}
+
+@media (max-width: 500px) {
+    .task-form {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
